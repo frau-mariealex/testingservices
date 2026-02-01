@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Tests Suite" parallel="false" verbose="2">
+
+    <test name="Wikipedia Mobile Tests">
+        <classes>
+            <class name="tests.mobile.WikipediaMobileTests">
+                <methods>
+                    <include name="testSearchArticleByKeyword"/>
+                    <include name="testOpenArticleFromSearch"/>
+                    <include name="testSearchWithVariousQueries"/>
+                    <include name="testArticleTitleMatchesSearch"/>
+                    <include name="testArticleUIElements"/>
+                    <include name="testScrollArticle"/>
+                    <include name="testScrollToSpecificContent"/>
+                    <include name="testMainScreenDisplayed"/>
+                    <include name="testNavigateToSettings"/>
+                    <include name="testArticleHasLanguageOption"/>
+                    <include name="testBackNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
